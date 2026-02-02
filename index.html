@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vplyv stresu na duševné zdravie a imunitu študentov</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+    :root {
+        --primary: #60a5fa;
+        --secondary: #38bdf8;
+        --dark: #e5e7eb;
+        --gray: #94a3b8;
+        --light: #020617;
+        --bg: #020617;
+        --accent: #0f172a;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 90px;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg);
+        color: var(--dark);
+        line-height: 1.7;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: 'Playfair Display', serif;
+        color: #f8fafc;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+
+        /* ================= HEADER ================= */
+
+        header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background: rgba(2, 6, 23, 0.9);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+    }
+
+    .logo {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+    }
+
+    .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+    }
+
+    .nav ul li a {
+        font-size: 14px;
+        font-weight: 500;
+        color: #cbd5f5;
+        transition: color 0.3s;
+    }
+
+    .nav ul li a:hover {
+        color: #ffffff;
+    }
+
+        /* ================= HERO ================= */
+
+         .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background:
+            linear-gradient(
+                rgba(2, 6, 23, 0.85),
+                rgba(2, 6, 23, 0.95)
+            ),
+            url("students-stress.jpg") center / cover no-repeat;
+        padding-top: 72px;
+    }
+
+    .hero-content {
+        max-width: 720px;
+        color: #ffffff;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        line-height: 1.15;
+        margin-bottom: 24px;
+    }
+
+    .hero p {
+        font-size: 19px;
+        color: #cbd5f5;
+        margin-bottom: 36px;
+    }
+
+    .hero-highlight {
+        background: rgba(96, 165, 250, 0.12);
+        padding: 14px 18px;
+        border-left: 4px solid var(--primary);
+        margin-bottom: 32px;
+        font-size: 15px;
+        color: #dbeafe;
+    }
+
+    .btn {
+        padding: 14px 30px;
+        border-radius: 6px;
+        font-size: 15px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+
+    .btn-primary {
+        background-color: var(--primary);
+        color: #020617;
+    }
+
+    .btn-primary:hover {
+        background-color: #3b82f6;
+    }
+
+    .btn-outline {
+        border: 1px solid rgba(255,255,255,0.5);
+        color: #ffffff;
+    }
+
+    .btn-outline:hover {
+        background-color: rgba(255,255,255,0.08);
+    }
+        /* ================= SECTION BASE (pokračovanie neskôr) ================= */
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+        <div class="logo">Duševné zdravie študentov</div>
+        <ul>
+    <li><a href="#uvod">Úvod</a></li>
+    <li><a href="#stres">Stres</a></li>
+    <li><a href="#dusevne-zdravie">Duševné zdravie</a></li>
+    <li><a href="#zivotny-styl">Životný štýl</a></li>
+    <li><a href="#test">Test stresu</a></li>
+    <li><a href="#pomoc">Pomoc</a></li>
+</ul>
+
+    </div>
+</header>
+
+<section class="hero" id="uvod">
+    <div class="container">
+        <div class="hero-content">
+            <h1>
+                Vplyv stresu<br>
+                na duševné zdravie<br>
+                a imunitu študentov
+            </h1>
+
+            <div class="hero-highlight">
+                Dlhodobý stres ovplyvňuje nielen psychickú pohodu,
+                ale aj schopnosť organizmu brániť sa proti chorobám.
+            </div>
+
+            <p>
+                Táto webová stránka sa zameriava na vedecky podložené informácie
+                o tom, ako akademický tlak, nedostatok spánku a psychické preťaženie
+                ovplyvňujú duševné zdravie a imunitný systém študentov.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Preskúmať tému</a>
+                <a href="#" class="btn btn-outline">Zistiť viac</a>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    /* ================= STRESS SECTION ================= */
+
+    .section {
+        padding: 96px 0;
+        background-color: var(--bg);
+    }
+
+    .section-alt {
+        background-color: #ffffff;
+    }
+
+    .section-header {
+        max-width: 720px;
+        margin-bottom: 64px;
+    }
+
+    .section-header h2 {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+
+    .section-header p {
+        font-size: 18px;
+        color: var(--gray);
+    }
+
+    .stress-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 32px;
+    }
+
+    .stress-card {
+        background: #ffffff;
+        padding: 32px 28px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .stress-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+    }
+
+    .stress-icon {
+        width: 52px;
+        height: 52px;
+        background-color: var(--accent);
+        color: var(--primary);
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    .stress-card h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .stress-card p {
+        font-size: 15px;
+        color: var(--gray);
+        line-height: 1.6;
+    }
+</style>
+<section class="section section-alt" id="stres">
+    <div class="container">
+
+        <div class="section-header">
+            <h2>Čo je stres a prečo vzniká u študentov</h2>
+            <p>
+                Stres je prirodzená reakcia organizmu na záťažové situácie.
+                U študentov však často nadobúda chronickú formu, ktorá môže
+                negatívne ovplyvniť psychické aj fyzické zdravie.
+            </p>
+        </div>
+
+        <div class="stress-grid">
+
+            <div class="stress-card">
+                <div class="stress-icon">📚</div>
+                <h3>Akademický tlak</h3>
+                <p>
+                    Neustále skúšky, testy, termíny a vysoké očakávania môžu
+                    viesť k dlhodobému psychickému napätiu a pocitu zlyhania.
+                </p>
+            </div>
+
+            <div class="stress-card">
+                <div class="stress-icon">⏰</div>
+                <h3>Nedostatok času</h3>
+                <p>
+                    Kombinácia školy, brigády a osobného života často spôsobuje
+                    chronický nedostatok oddychu a regenerácie.
+                </p>
+            </div>
+
+            <div class="stress-card">
+                <div class="stress-icon">😴</div>
+                <h3>Nedostatok spánku</h3>
+                <p>
+                    Nepravidelný spánok oslabuje schopnosť mozgu spracovávať stres
+                    a zvyšuje náchylnosť na úzkosť a vyčerpanie.
+                </p>
+            </div>
+
+            <div class="stress-card">
+                <div class="stress-icon">🧠</div>
+                <h3>Psychická záťaž</h3>
+                <p>
+                    Obavy z budúcnosti, porovnávanie sa s ostatnými a tlak
+                    na výkon môžu viesť k dlhodobému emočnému preťaženiu.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<style>
+    /* ================= MENTAL HEALTH SECTION ================= */
+
+    .mental-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        align-items: center;
+    }
+
+    .mental-text h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .mental-text p {
+        font-size: 17px;
+        color: var(--gray);
+        margin-bottom: 24px;
+    }
+
+    .timeline {
+        position: relative;
+        padding-left: 32px;
+        border-left: 3px solid var(--primary);
+    }
+
+    .timeline-item {
+        margin-bottom: 36px;
+        position: relative;
+    }
+
+    .timeline-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: -11px;
+        top: 4px;
+        width: 18px;
+        height: 18px;
+        background-color: var(--primary);
+        border-radius: 50%;
+    }
+
+    .timeline-item h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .timeline-item p {
+        font-size: 15px;
+        color: var(--gray);
+        line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+        .mental-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<section class="section" id="dusevne-zdravie">
+    <div class="container">
+
+        <div class="mental-grid">
+
+            <div class="mental-text">
+                <h2>Ako stres ovplyvňuje duševné zdravie študentov</h2>
+                <p>
+                    Dlhodobý alebo intenzívny stres má zásadný vplyv na fungovanie
+                    centrálneho nervového systému. U študentov môže viesť
+                    k postupnému zhoršovaniu psychickej pohody, koncentrácie
+                    a celkovej kvality života.
+                </p>
+                <p>
+                    Ak stres pretrváva bez dostatočnej regenerácie, môže sa
+                    prejaviť nielen emocionálne, ale aj behaviorálne
+                    a kognitívne.
+                </p>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h3>Zvýšená úzkosť</h3>
+                    <p>
+                        Neustály tlak a obavy z výkonu vedú k pocitom napätia,
+                        nervozity a strachu, ktoré môžu narúšať bežné fungovanie.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h3>Poruchy koncentrácie</h3>
+                    <p>
+                        Stres znižuje schopnosť sústredenia, pamäť
+                        a efektívne spracovanie informácií.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h3>Emočné vyčerpanie</h3>
+                    <p>
+                        Dlhodobé preťaženie môže viesť k apatii,
+                        strate motivácie a pocitom beznádeje.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h3>Riziko depresie a vyhorenia</h3>
+                    <p>
+                        Ak stres pretrváva dlhé obdobie, zvyšuje sa riziko
+                        rozvoja depresívnych stavov a syndrómu vyhorenia.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<style>
+    /* ================= HEALTHY LIFESTYLE SECTION ================= */
+
+    .lifestyle-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 64px;
+        align-items: start;
+    }
+
+    .lifestyle-text h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .lifestyle-text p {
+        font-size: 17px;
+        color: var(--gray);
+        margin-bottom: 24px;
+    }
+
+    .benefits-list {
+        margin-top: 24px;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .benefits-list li {
+        display: flex;
+        gap: 14px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        color: var(--dark);
+    }
+
+    .benefit-icon {
+        width: 28px;
+        height: 28px;
+        background-color: var(--accent);
+        color: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    .meal-card {
+        background: #ffffff;
+        padding: 32px;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .meal-card h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .meal {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #e5e7eb;
+        font-size: 15px;
+    }
+
+    .meal:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .meal span {
+        color: var(--gray);
+    }
+
+    @media (max-width: 900px) {
+        .lifestyle-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<section class="section section-alt" id="zivotny-styl">
+    <div class="container">
+
+        <div class="lifestyle-grid">
+
+            <div class="lifestyle-text">
+                <h2>Zdravý životný štýl ako ochrana pred stresom</h2>
+
+                <p>
+                    Zdravý životný štýl zohráva kľúčovú úlohu pri zvládaní stresu
+                    a podpore duševného aj fyzického zdravia študentov.
+                    Správna výživa, pravidelný režim a dostatočná hydratácia
+                    pomáhajú stabilizovať hormonálnu rovnováhu a zvyšujú
+                    odolnosť organizmu voči záťaži.
+                </p>
+
+                <p>
+                    Nevhodná strava, vynechávanie jedál a nadmerná konzumácia
+                    cukrov či kofeínu môžu stres ešte zhoršovať a negatívne
+                    ovplyvňovať imunitný systém.
+                </p>
+
+                <ul class="benefits-list">
+                    <li>
+                        <div class="benefit-icon">✓</div>
+                        stabilnejšia hladina energie počas dňa
+                    </li>
+                    <li>
+                        <div class="benefit-icon">✓</div>
+                        lepšia koncentrácia a pamäť
+                    </li>
+                    <li>
+                        <div class="benefit-icon">✓</div>
+                        posilnenie imunitného systému
+                    </li>
+                    <li>
+                        <div class="benefit-icon">✓</div>
+                        zníženie únavy a podráždenosti
+                    </li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h3>Ukážkový denný jedálniček študenta</h3>
+
+                <div class="meal">
+                    <strong>Raňajky</strong>
+                    <span>ovsené vločky, jogurt, ovocie</span>
+                </div>
+
+                <div class="meal">
+                    <strong>Dopoludňajšia desiata</strong>
+                    <span>orechy, jablko</span>
+                </div>
+
+                <div class="meal">
+                    <strong>Obed</strong>
+                    <span>kuracie mäso, ryža, zelenina</span>
+                </div>
+
+                <div class="meal">
+                    <strong>Olovrant</strong>
+                    <span>tvaroh alebo smoothie</span>
+                </div>
+
+                <div class="meal">
+                    <strong>Večera</strong>
+                    <span>celozrnné pečivo, zelenina, bielkoviny</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<style>
+    /* ================= SLEEP & MOVEMENT SECTION ================= */
+
+    .regeneration-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 32px;
+        margin-top: 48px;
+    }
+
+    .regeneration-card {
+        background: #ffffff;
+        padding: 36px 30px;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        transition: transform 0.3s ease;
+    }
+
+    .regeneration-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .regeneration-icon {
+        width: 56px;
+        height: 56px;
+        background-color: var(--accent);
+        color: var(--primary);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .regeneration-card h3 {
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+
+    .regeneration-card p {
+        font-size: 15px;
+        color: var(--gray);
+        line-height: 1.6;
+    }
+</style>
+<section class="section" id="regeneracia">
+    <div class="container">
+
+        <div class="section-header">
+            <h2>Spánok, pohyb a regenerácia</h2>
+            <p>
+                Pravidelný spánok, fyzická aktivita a dostatočná regenerácia
+                sú nevyhnutné pre udržiavanie duševnej rovnováhy a silného
+                imunitného systému. U študentov bývajú tieto oblasti
+                často zanedbávané.
+            </p>
+        </div>
+
+        <div class="regeneration-grid">
+
+            <div class="regeneration-card">
+                <div class="regeneration-icon">🌙</div>
+                <h3>Kvalitný spánok</h3>
+                <p>
+                    Nedostatok spánku zvyšuje hladinu stresových hormónov,
+                    oslabuje koncentráciu a znižuje schopnosť organizmu
+                    regenerovať sa. Odporúča sa 7–9 hodín spánku denne.
+                </p>
+            </div>
+
+            <div class="regeneration-card">
+                <div class="regeneration-icon">🏃‍♂️</div>
+                <h3>Pravidelný pohyb</h3>
+                <p>
+                    Fyzická aktivita podporuje tvorbu endorfínov,
+                    znižuje napätie a zlepšuje náladu. Už 30 minút
+                    mierneho pohybu denne má výrazný pozitívny efekt.
+                </p>
+            </div>
+
+            <div class="regeneration-card">
+                <div class="regeneration-icon">🧘</div>
+                <h3>Psychická regenerácia</h3>
+                <p>
+                    Relaxačné techniky ako dychové cvičenia, meditácia
+                    alebo krátke prestávky počas učenia pomáhajú
+                    predchádzať preťaženiu.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<style>
+    /* ================= STRESS PREVENTION SECTION ================= */
+
+    .prevention-wrapper {
+        max-width: 900px;
+    }
+
+    .prevention-wrapper h2 {
+        font-size: 42px;
+        margin-bottom: 24px;
+    }
+
+    .prevention-wrapper h3 {
+        font-size: 24px;
+        margin: 40px 0 16px;
+    }
+
+    .prevention-wrapper p {
+        font-size: 17px;
+        color: var(--gray);
+        margin-bottom: 18px;
+        line-height: 1.8;
+    }
+
+    .prevention-box {
+        background: #ffffff;
+        border-left: 5px solid var(--primary);
+        padding: 28px 32px;
+        margin: 40px 0;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .prevention-box strong {
+        color: var(--dark);
+    }
+</style>
+<section class="section section-alt" id="prevencia">
+    <div class="container">
+        <div class="prevention-wrapper">
+
+            <h2>Prevencia a zvládanie stresu u študentov</h2>
+
+            <p>
+                Prevencia stresu predstavuje jeden z najdôležitejších faktorov
+                ochrany duševného zdravia a imunity študentov. Keďže stres
+                nie je možné zo života úplne odstrániť, kľúčové je naučiť sa
+                ho rozpoznať, pochopiť jeho príčiny a aktívne s ním pracovať.
+                Dlhodobé zanedbávanie stresových prejavov môže viesť k vážnym
+                psychickým aj fyzickým problémom.
+            </p>
+
+            <p>
+                Efektívne zvládanie stresu zahŕňa kombináciu správneho
+                time managementu, psychohygieny, realistických očakávaní
+                a podpory zo sociálneho prostredia. Študenti, ktorí si
+                osvoja tieto zručnosti, sú odolnejší voči tlaku a lepšie
+                zvládajú náročné obdobia štúdia.
+            </p>
+
+            <h3>Time management a organizácia času</h3>
+
+            <p>
+                Jednou z najčastejších príčin stresu u študentov je
+                nesprávne rozloženie času. Prokrastinácia, hromadenie
+                povinností a nepravidelný režim vedú k pocitu zahltenia
+                a straty kontroly. Efektívny time management pomáha
+                znižovať chaos a prináša pocit istoty.
+            </p>
+
+            <p>
+                Medzi základné stratégie patrí vytváranie realistických
+                denných a týždenných plánov, rozdeľovanie veľkých úloh
+                na menšie časti a stanovenie priorít. Dôležitá je aj
+                schopnosť zaradiť do rozvrhu oddych a čas pre seba,
+                ktorý je nevyhnutný pre regeneráciu.
+            </p>
+
+            <h3>Psychohygiena a starostlivosť o myseľ</h3>
+
+            <p>
+                Psychohygiena zahŕňa vedomú starostlivosť o psychické
+                zdravie. U študentov je často podceňovaná, hoci má
+                zásadný význam pre dlhodobú pohodu. Pravidelné prestávky,
+                relaxačné techniky a vyváženie štúdia s voľným časom
+                výrazne znižujú hladinu stresu.
+            </p>
+
+            <p>
+                Medzi účinné metódy psychohygieny patria dychové cvičenia,
+                meditácia, mindfulness, pobyt v prírode alebo kreatívne
+                aktivity. Aj krátke chvíle vedomej relaxácie počas dňa
+                môžu mať pozitívny vplyv na psychickú stabilitu.
+            </p>
+
+            <h3>Sociálna podpora a komunikácia</h3>
+
+            <p>
+                Sociálne vzťahy zohrávajú významnú ochrannú úlohu pri
+                zvládaní stresu. Podpora zo strany rodiny, priateľov
+                alebo spolužiakov pomáha znižovať pocit osamelosti
+                a zvyšuje schopnosť vyrovnať sa s náročnými situáciami.
+            </p>
+
+            <p>
+                Otvorená komunikácia o problémoch a emóciách je dôležitá
+                najmä v období zvýšenej záťaže. Študenti by nemali váhať
+                vyhľadať odbornú pomoc, ak stres presahuje ich zvládacie
+                schopnosti.
+            </p>
+
+            <div class="prevention-box">
+                <p>
+                    <strong>Dôležité:</strong> Prevencia stresu nie je
+                    jednorazový proces, ale dlhodobý spôsob života.
+                    Pravidelné malé zmeny v dennom režime môžu mať
+                    výrazný pozitívny vplyv na duševné zdravie aj
+                    imunitný systém študentov.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<style>
+    /* ================= CONCLUSION SECTION ================= */
+
+    .conclusion-wrapper {
+        max-width: 950px;
+    }
+
+    .conclusion-wrapper h2 {
+        font-size: 42px;
+        margin-bottom: 28px;
+    }
+
+    .conclusion-wrapper h3 {
+        font-size: 26px;
+        margin: 48px 0 18px;
+    }
+
+    .conclusion-wrapper p {
+        font-size: 17px;
+        color: var(--gray);
+        margin-bottom: 20px;
+        line-height: 1.85;
+    }
+
+    .recommendations {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 28px;
+    }
+
+    .recommendation-card {
+        background: #ffffff;
+        padding: 30px 28px;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .recommendation-card h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .recommendation-card p {
+        font-size: 15px;
+        color: var(--gray);
+        line-height: 1.7;
+    }
+
+    .final-note {
+        background: var(--accent);
+        padding: 32px 36px;
+        border-radius: 14px;
+        margin-top: 56px;
+    }
+
+    .final-note p {
+        font-size: 17px;
+        color: var(--dark);
+        line-height: 1.8;
+    }
+</style>
+<section class="section" id="mental">
+    <div class="container">
+        <div class="conclusion-wrapper">
+
+            <h2>Záver: význam prevencie stresu u študentov</h2>
+
+            <p>
+                Stres predstavuje neoddeliteľnú súčasť života študentov,
+                avšak jeho dlhodobé a nekontrolované pôsobenie môže mať
+                závažné dôsledky na duševné zdravie aj imunitný systém.
+                Ako bolo uvedené v predchádzajúcich častiach, chronický
+                stres ovplyvňuje psychickú pohodu, schopnosť koncentrácie,
+                emocionálnu stabilitu a zároveň oslabuje obranyschopnosť
+                organizmu.
+            </p>
+
+            <p>
+                Študenti sa často nachádzajú v období intenzívnych zmien,
+                vysokých nárokov a očakávaní. Kombinácia akademického tlaku,
+                sociálnych faktorov, nedostatku spánku a nevhodného
+                životného štýlu vytvára podmienky pre vznik dlhodobého
+                stresu. Preto je nevyhnutné venovať pozornosť nielen
+                riešeniu dôsledkov stresu, ale predovšetkým jeho prevencii.
+            </p>
+
+            <p>
+                Výsledky odborných štúdií aj praktických skúseností
+                poukazujú na to, že systematická starostlivosť o duševné
+                zdravie, vyvážená strava, pravidelný pohyb a kvalitný
+                spánok významne prispievajú k lepšiemu zvládaniu stresu
+                a posilneniu imunity. Prevencia by mala byť vnímaná ako
+                prirodzená súčasť každodenného života študentov.
+            </p>
+
+            <h3>Praktické odporúčania pre študentov</h3>
+
+            <div class="recommendations">
+
+                <div class="recommendation-card">
+                    <h4>Udržiavaj pravidelný režim</h4>
+                    <p>
+                        Snaž sa o pravidelný spánok, stravovanie a učenie.
+                        Stabilný denný režim pomáha telu aj mysli lepšie
+                        zvládať záťažové situácie.
+                    </p>
+                </div>
+
+                <div class="recommendation-card">
+                    <h4>Plánuj si povinnosti realisticky</h4>
+                    <p>
+                        Rozdeľ si úlohy na menšie časti a vyhýbaj sa
+                        prokrastinácii. Realistické plánovanie znižuje
+                        pocit zahltenia a stresu.
+                    </p>
+                </div>
+
+                <div class="recommendation-card">
+                    <h4>Dbaj na vyváženú stravu</h4>
+                    <p>
+                        Pravidelný príjem kvalitných potravín podporuje
+                        stabilnú hladinu energie a správne fungovanie
+                        nervového aj imunitného systému.
+                    </p>
+                </div>
+
+                <div class="recommendation-card">
+                    <h4>Zaraď pohyb do každého dňa</h4>
+                    <p>
+                        Aj krátka fyzická aktivita pomáha znižovať napätie,
+                        zlepšuje náladu a podporuje psychickú rovnováhu.
+                    </p>
+                </div>
+
+                <div class="recommendation-card">
+                    <h4>Neboj sa hovoriť o problémoch</h4>
+                    <p>
+                        Zdieľanie pocitov s blízkymi osobami alebo
+                        odborníkmi môže výrazne uľahčiť zvládanie stresu.
+                    </p>
+                </div>
+
+                <div class="recommendation-card">
+                    <h4>Dopraj si čas na oddych</h4>
+                    <p>
+                        Oddych nie je strata času, ale nevyhnutná súčasť
+                        regenerácie organizmu a prevencie vyhorenia.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="final-note">
+                <p>
+                    Na záver možno konštatovať, že starostlivosť o duševné
+                    zdravie a imunitu by mala byť prioritou každého študenta.
+                    Včasná prevencia stresu a zdravý životný štýl predstavujú
+                    investíciu do budúcnosti, ktorá sa prejaví nielen lepším
+                    akademickým výkonom, ale aj vyššou kvalitou života.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<style>
+    /* ================= STRESS TEST SECTION ================= */
+
+    .test-wrapper {
+        max-width: 900px;
+    }
+
+    .test-wrapper h2 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    .test-wrapper p {
+        font-size: 17px;
+        color: var(--gray);
+        margin-bottom: 28px;
+        line-height: 1.8;
+    }
+
+    .question {
+        background: #ffffff;
+        padding: 26px 30px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.07);
+    }
+
+    .question h4 {
+        font-size: 17px;
+        margin-bottom: 14px;
+    }
+
+    .options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .options label {
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .test-button {
+        margin-top: 32px;
+        padding: 16px 36px;
+        background-color: var(--primary);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .test-button:hover {
+        background-color: #1d4ed8;
+    }
+
+    .result-box {
+        margin-top: 40px;
+        padding: 32px 36px;
+        border-radius: 14px;
+        display: none;
+    }
+
+    .low {
+        background-color: #dcfce7;
+        color: #166534;
+    }
+
+    .medium {
+        background-color: #fef9c3;
+        color: #854d0e;
+    }
+
+    .high {
+        background-color: #fee2e2;
+        color: #7f1d1d;
+    }
+
+    .result-box h3 {
+        margin-bottom: 14px;
+    }
+
+    .note {
+        font-size: 14px;
+        color: var(--gray);
+        margin-top: 18px;
+    }
+</style>
+<section class="section section-alt" id="test">
+    <div class="container">
+        <div class="test-wrapper">
+
+            <h2>Test vnímaného stresu (PSS-10)</h2>
+
+            <p>
+                Nasledujúci dotazník vychádza zo štandardizovaného
+                <strong>Perceived Stress Scale (PSS-10)</strong>,
+                ktorý bol vyvinutý Cohenom a kol. a je široko používaný
+                v psychológii a zdravotníckom výskume.
+                Test hodnotí mieru stresu za posledný mesiac.
+            </p>
+
+            <form id="stressTest">
+
+                <!-- QUESTIONS -->
+                <script>
+                    const questions = [
+                        "Ako často ste boli rozrušení kvôli niečomu neočakávanému?",
+                        "Ako často ste mali pocit, že nemáte kontrolu nad dôležitými vecami?",
+                        "Ako často ste sa cítili nervózni alebo v strese?",
+                        "Ako často ste mali pocit, že veci idú podľa vašich predstáv?",
+                        "Ako často ste mali pocit, že nezvládate všetko, čo musíte urobiť?",
+                        "Ako často ste mali pocit, že dokážete kontrolovať podráždenosť?",
+                        "Ako často ste mali pocit, že máte veci pod kontrolou?",
+                        "Ako často ste mali pocit, že ťažkosti sa na vás valia?",
+                        "Ako často ste boli nahnevaní kvôli veciam, ktoré ste nemohli ovplyvniť?",
+                        "Ako často ste mali pocit, že problémy vás prevyšujú?"
+                    ];
+
+                    questions.forEach((q, i) => {
+                        document.write(`
+                            <div class="question">
+                                <h4>${i + 1}. ${q}</h4>
+                                <div class="options">
+                                    ${[0,1,2,3,4].map(v => `
+                                        <label>
+                                            <input type="radio" name="q${i}" value="${v}" required>
+                                            ${["Nikdy","Takmer nikdy","Niekedy","Pomerne často","Veľmi často"][v]}
+                                        </label>
+                                    `).join("")}
+                                </div>
+                            </div>
+                        `);
+                    });
+                </script>
+
+                <button type="button" class="test-button" onclick="evaluateTest()">
+                    Vyhodnotiť test
+                </button>
+            </form>
+
+            <div id="result" class="result-box">
+                <h3 id="resultTitle"></h3>
+                <p id="resultText"></p>
+                <p class="note">
+                    Poznámka: Tento test slúži na orientačné posúdenie stresu
+                    a nenahrádza odbornú diagnostiku.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<script>
+    function evaluateTest() {
+        let score = 0;
+
+        for (let i = 0; i < 10; i++) {
+            const value = document.querySelector(`input[name="q${i}"]:checked`).value;
+
+            // reverzné otázky: 4, 6, 7
+            if ([3,5,6].includes(i)) {
+                score += 4 - parseInt(value);
+            } else {
+                score += parseInt(value);
+            }
+        }
+
+        const resultBox = document.getElementById("result");
+        const title = document.getElementById("resultTitle");
+        const text = document.getElementById("resultText");
+
+        resultBox.style.display = "block";
+        resultBox.className = "result-box";
+
+        if (score <= 13) {
+            resultBox.classList.add("low");
+            title.innerText = "Nízka miera stresu";
+            text.innerText =
+                "Vaše odpovede naznačujú nízku úroveň vnímaného stresu. Pravdepodobne dobre zvládate záťažové situácie.";
+        } else if (score <= 26) {
+            resultBox.classList.add("medium");
+            title.innerText = "Stredná miera stresu";
+            text.innerText =
+                "Vaše odpovede naznačujú strednú úroveň stresu. Odporúča sa venovať pozornosť psychohygiene a oddychu.";
+        } else {
+            resultBox.classList.add("high");
+            title.innerText = "Vysoká miera stresu";
+            text.innerText =
+                "Vaše odpovede naznačujú vysokú úroveň stresu. Zvážte úpravu životného štýlu alebo konzultáciu s odborníkom.";
+        }
+    }
+</script>
+<style>
+    /* ================= HELP & LINKS SECTION ================= */
+
+    .help-wrapper {
+        max-width: 1000px;
+    }
+
+    .help-wrapper h2 {
+        font-size: 42px;
+        margin-bottom: 24px;
+    }
+
+    .help-wrapper p {
+        font-size: 17px;
+        color: var(--gray);
+        margin-bottom: 22px;
+        line-height: 1.85;
+    }
+
+    .help-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 32px;
+        margin-top: 48px;
+    }
+
+    .help-card {
+        background: #ffffff;
+        padding: 32px 30px;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .help-card h3 {
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+
+    .help-card ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .help-card li {
+        font-size: 15px;
+        margin-bottom: 12px;
+        color: var(--gray);
+        line-height: 1.6;
+    }
+
+    .help-card a {
+        color: var(--primary);
+        font-weight: 500;
+        word-break: break-word;
+    }
+
+    .important-note {
+        margin-top: 56px;
+        background: #fee2e2;
+        border-left: 6px solid #dc2626;
+        padding: 28px 32px;
+        border-radius: 10px;
+    }
+
+    .important-note p {
+        color: #7f1d1d;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+</style>
+<section class="section section-alt" id="pomoc">
+    <div class="container">
+        <div class="help-wrapper">
+
+            <h2>Pomoc, podpora a overené zdroje informácií</h2>
+
+            <p>
+                Ak stres, úzkosť alebo psychická záťaž dlhodobo ovplyvňujú
+                každodenný život študenta, je dôležité vedieť, kde hľadať
+                pomoc a spoľahlivé informácie. Odborná podpora a kvalitné
+                zdroje môžu výrazne prispieť k lepšiemu zvládaniu náročných
+                situácií a prevencii vážnejších problémov.
+            </p>
+
+            <p>
+                Nasledujúce odkazy a inštitúcie poskytujú overené informácie,
+                odbornú pomoc a podporu v oblasti duševného zdravia,
+                zvládania stresu a psychickej pohody.
+            </p>
+
+            <div class="help-grid">
+
+                <div class="help-card">
+                    <h3>Odborná pomoc a poradenstvo</h3>
+                    <ul>
+                        <li>
+                            <strong>IPčko – internetová poradňa</strong><br>
+                            <a href="https://ipcko.sk" target="_blank">https://ipcko.sk</a><br>
+                            Psychologická pomoc pre mladých ľudí.
+                        </li>
+                        <li>
+                            <strong>Linka dôvery Nezábudka</strong><br>
+                            <a href="https://www.dusevnezdravie.sk" target="_blank">
+                                https://www.dusevnezdravie.sk
+                            </a>
+                        </li>
+                        <li>
+                            <strong>Školský psychológ</strong><br>
+                            Dostupný na mnohých stredných a vysokých školách.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="help-card">
+                    <h3>Vedecké a edukačné zdroje</h3>
+                    <ul>
+                        <li>
+                            <strong>WHO – duševné zdravie</strong><br>
+                            <a href="https://www.who.int/teams/mental-health-and-substance-use"
+                               target="_blank">
+                                www.who.int
+                            </a>
+                        </li>
+                        <li>
+                            <strong>National Institute of Mental Health</strong><br>
+                            <a href="https://www.nimh.nih.gov" target="_blank">
+                                www.nimh.nih.gov
+                            </a>
+                        </li>
+                        <li>
+                            <strong>Psychology Today</strong><br>
+                            <a href="https://www.psychologytoday.com" target="_blank">
+                                www.psychologytoday.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="help-card">
+                    <h3>Zvládanie stresu v praxi</h3>
+                    <ul>
+                        <li>
+                            Mindfulness a meditácia<br>
+                            <a href="https://www.mindful.org" target="_blank">
+                                www.mindful.org
+                            </a>
+                        </li>
+                        <li>
+                            Techniky zvládania stresu<br>
+                            <a href="https://www.apa.org/topics/stress"
+                               target="_blank">
+                                American Psychological Association
+                            </a>
+                        </li>
+                        <li>
+                            Aplikácie na duševnú pohodu<br>
+                            (napr. dychové cvičenia, relaxácia)
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="important-note">
+                <p>
+                    <strong>Upozornenie:</strong> Ak sa objavujú vážne príznaky
+                    stresu, úzkosti alebo depresie (napr. dlhodobá beznádej,
+                    panické ataky, myšlienky na sebapoškodenie),
+                    je nevyhnutné okamžite vyhľadať odbornú pomoc.
+                    Vyhľadanie pomoci je prejavom zodpovednosti, nie slabosti.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<style>
+    /* ================= FOOTER ================= */
+
+    footer {
+        background-color: #0f172a;
+        color: #e5e7eb;
+        padding: 64px 0 40px;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer-column h4 {
+        font-size: 18px;
+        margin-bottom: 16px;
+        color: #ffffff;
+    }
+
+    .footer-column p,
+    .footer-column li {
+        font-size: 14px;
+        color: #cbd5f5;
+        line-height: 1.7;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .footer-column li {
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(255,255,255,0.1);
+        padding-top: 24px;
+        text-align: center;
+        font-size: 13px;
+        color: #94a3b8;
+    }
+</style>
+<footer>
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+                <h4>O projekte</h4>
+                <p>
+                    Táto webová stránka bola vytvorená ako edukačný projekt
+                    zameraný na vplyv stresu na duševné zdravie a imunitu
+                    študentov. Cieľom je zvýšiť povedomie o význame prevencie,
+                    zdravého životného štýlu a včasnej pomoci.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Témy stránky</h4>
+                <ul>
+                    <li>Stres u študentov</li>
+                    <li>Duševné zdravie</li>
+                    <li>Imunitný systém</li>
+                    <li>Zdravý životný štýl</li>
+                    <li>Prevencia a pomoc</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Dôležité upozornenie</h4>
+                <p>
+                    Informácie uvedené na tejto stránke majú edukačný charakter
+                    a nenahrádzajú odbornú zdravotnú alebo psychologickú
+                    diagnostiku. V prípade vážnych ťažkostí vyhľadajte
+                    odbornú pomoc.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 | Vplyv stresu na duševné zdravie a imunitu študentov |
+            Školský edukačný projekt
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
